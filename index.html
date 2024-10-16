@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./style.css">
+    <title>Movie Finder</title>
+</head>
+
+<body>
+    <header>
+        <img src="./images/clapperboard.png" alt="Movie Finder">
+        <a href="/"><span>Movie</span>Finder</a>
+    </header>
+
+    <main>
+        <section id="setup-container">
+
+            <div class="setup-inner">
+                <img src="./images/actor.png">
+                <div class="speech-bubble" id="speech-bubble">
+                    <p id="actor-text">
+                        "Hey there! Describe the movie you're thinking of—give me the plot, characters, or that one scene you can't forget! I'll help you figure out the name!"
+                    </p>
+                </div>
+            </div>
+
+            <div class="setup-inner setup-input-container" id="setup-input-container">
+                <textarea id="setup-textarea" placeholder="An evil genius wants to take over the world using AI."></textarea>
+                <button class="send-btn" id="send-btn" aria-label="send">
+                        <img src="images/send-btn-icon.png" alt="send">
+                </button>
+            </div>
+        </section>
+
+        <!--Output-->
+        <section class="output-container" id="output-container">
+            <div id="output-img-container" class="output-img-container"></div>
+            <h1 id="output-title"></h1>
+            <h2 id="output-stars"></h2>
+            <p id="output-text"></p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 MovieFinder All Rights Reserved
+    </footer>
+    <script type="module" src="./main.js"></script>
+    
+
+</body>
+</html>
